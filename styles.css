@@ -420,6 +420,56 @@ textarea:focus {
   margin: 0;
 }
 
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.35rem;
+}
+
+.social-link {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  display: inline-grid;
+  place-items: center;
+  line-height: 0;
+}
+
+.social-link svg {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+  transform-origin: center;
+}
+
+.site-footer a.youtube-link,
+.site-footer a.youtube-link:hover {
+  color: #ff0000;
+}
+
+.youtube-link svg {
+  transform: scale(0.92);
+}
+
+.site-footer a.facebook-link,
+.site-footer a.facebook-link:hover {
+  color: #1877f2;
+}
+
+.facebook-link svg {
+  transform: scale(0.96);
+}
+
+.site-footer a.instagram-link,
+.site-footer a.instagram-link:hover {
+  color: #e4405f;
+}
+
+.instagram-link svg {
+  transform: scale(0.9);
+}
+
 .contact-icon {
   color: #d5bbff;
   display: inline-grid;
