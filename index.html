@@ -112,20 +112,62 @@
         <h2>Courses Offered</h2>
         <div class="cards">
           <article class="card">
-            <h3>IAS Complete Program</h3>
-            <p>Comprehensive preparation for Prelims, Mains, and Interview with subject-wise strategy and mock tests.</p>
+            <h3>Attempt Integrated Mentorship Programme</h3>
+            <ul class="course-points">
+              <li>Live + Recorded Classes</li>
+              <li>Learn to connect themes across GS Papers using PYQ analysis</li>
+              <li>Individualized study plan and time table</li>
+              <li>Special Focus on GS V (ASSAM Part)</li>
+              <li>Only Relevant study material</li>
+              <li>Access to All Courses</li>
+            </ul>
           </article>
           <article class="card">
-            <h3>IAS Foundation Batch</h3>
-            <p>Ideal for beginners. Covers NCERT basics, current affairs orientation, and answer writing practice.</p>
+            <h3>PRELIMS Mentorship 2026</h3>
+            <ul class="course-points">
+              <li>GS + CSAT coverage</li>
+              <li>Assam-focused + PYQs</li>
+              <li>Current affairs & mocks</li>
+              <li>Personal mentorship & analysis</li>
+            </ul>
           </article>
           <article class="card">
-            <h3>APSC / State Exams</h3>
-            <p>Targeted coverage for Assam and state-level civil services exam patterns with dedicated test series.</p>
+            <h3>Mains Mentorship Programme</h3>
+            <ul class="course-points">
+              <li>Mains Ready before Prelims</li>
+              <li>Start with Basics, build a strong foundation</li>
+              <li>Analyse the trend and absorb all PYQS</li>
+              <li>Regular Classes (Live + Recorded)</li>
+              <li>Decode Assam+ NE thoroughly, Master the GS V Syllabus</li>
+              <li>Make Answer Writing a Habit</li>
+              <li>Track Your Progress with the Sunday Test.</li>
+            </ul>
           </article>
           <article class="card">
-            <h3>Other Competitive Exams</h3>
-            <p>Guidance for general studies, aptitude, and interview prep for major competitive opportunities.</p>
+            <h3>Comprehensive Answer Writing Programme</h3>
+            <ul class="course-points">
+              <li>Structured weekly practice</li>
+              <li>Progressive modules (L1 -> L2 -> Final Simulation)</li>
+              <li>Assam-centric content</li>
+              <li>Personalized feedback & mentorship</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>PYQ Based Prelims Test Series</h3>
+            <ul class="course-points">
+              <li>APSC/ UPSC PYQ-based Topic-wise & Full-length Tests</li>
+              <li>Detailed Solutions & Answer Keys</li>
+              <li>Performance Review & Feedback</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>GS V (ASSAM & NE)</h3>
+            <ul class="course-points">
+              <li>Assam + NE based questions</li>
+              <li>Video Lectures</li>
+              <li>Assam + NE based CA</li>
+              <li>PYQ + Mains (GS V) Mentorship</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -199,15 +241,23 @@
         <div class="faq-list">
           <details class="faq-item">
             <summary>Which exams do you coach for?</summary>
-            <p>We mainly prepare students for IAS examination and also support APSC and other competitive exams.</p>
+            <p>We mainly prepare students for IAS and APSC, including Prelims, Mains, answer writing, and Assam + NE focused preparation through GS V and PYQ-based modules.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What courses are currently available?</summary>
+            <p>We offer Attempt Integrated Mentorship Programme, PRELIMS Mentorship 2026, Mains Mentorship Programme, Comprehensive Answer Writing Programme, PYQ Based Prelims Test Series, and GS V (ASSAM &amp; NE).</p>
           </details>
           <details class="faq-item">
             <summary>Do you provide test series and answer writing support?</summary>
-            <p>Yes. We conduct regular mock tests, performance analysis, and answer writing practice with mentor feedback.</p>
+            <p>Yes. We provide structured weekly answer writing practice, progressive modules, PYQ-based topic-wise and full-length tests, detailed solutions, and personalized performance feedback.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is there Assam and North East focused coverage?</summary>
+            <p>Yes. We include Assam-focused preparation in Prelims and offer dedicated GS V (ASSAM &amp; NE) support with Assam + NE current affairs and mentorship.</p>
           </details>
           <details class="faq-item">
             <summary>How can I enquire about admission and batch timings?</summary>
-            <p>You can submit the enquiry form on this website or contact us directly via phone/WhatsApp at 6001056594.</p>
+            <p>You can submit the course enquiry form on this website. On submission, your enquiry details are sent to our WhatsApp for quick response.</p>
           </details>
         </div>
       </div>
@@ -221,24 +271,30 @@
           <label>
             Full Name
             <input type="text" id="name" name="name" placeholder="Your full name" required>
+            <small id="nameError" class="field-error" aria-live="polite"></small>
           </label>
           <label>
             Phone Number
             <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+            <small id="phoneError" class="field-error" aria-live="polite"></small>
           </label>
           <label>
             Email Address
             <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <small id="emailError" class="field-error" aria-live="polite"></small>
           </label>
           <label>
             Course Interested In
             <select id="course" name="course" required>
               <option value="">Select a course</option>
-              <option>IAS Complete Program</option>
-              <option>IAS Foundation Batch</option>
-              <option>APSC / State Exams</option>
-              <option>Other Competitive Exams</option>
+              <option>Attempt Integrated Mentorship Programme</option>
+              <option>PRELIMS Mentorship 2026</option>
+              <option>Mains Mentorship Programme</option>
+              <option>Comprehensive Answer Writing Programme</option>
+              <option>PYQ Based Prelims Test Series</option>
+              <option>GS V (ASSAM & NE)</option>
             </select>
+            <small id="courseError" class="field-error" aria-live="polite"></small>
           </label>
           <label class="full">
             Message

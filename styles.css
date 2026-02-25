@@ -229,6 +229,15 @@ h1 {
   color: var(--violet-dark);
 }
 
+.course-points {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.course-points li + li {
+  margin-top: 0.35rem;
+}
+
 .team-role {
   margin: 0 0 0.55rem;
   color: #5e3f84;
@@ -319,6 +328,19 @@ select:focus,
 textarea:focus {
   outline: 2px solid rgba(111, 45, 189, 0.24);
   border-color: var(--violet);
+}
+
+.field-invalid {
+  border-color: #b00020;
+  outline: 2px solid rgba(176, 0, 32, 0.18);
+}
+
+.field-error {
+  min-height: 1.1rem;
+  font-size: 0.82rem;
+  line-height: 1.2;
+  color: #b00020;
+  font-weight: 500;
 }
 
 .form-status {
