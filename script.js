@@ -150,7 +150,10 @@ if (enquiryForm && formStatus) {
 
     formStatus.innerHTML = `Redirecting to WhatsApp with your enquiry details... If it does not open, <a href="${whatsappUrl}" target="_blank" rel="noopener noreferrer">click here</a>.`;
     formStatus.style.color = "#1f6f2d";
-    window.open(whatsappUrl, "_blank", "noopener");
+    const popup = window.open(whatsappUrl, "_blank", "noopener");
+    if (!popup) {
+      window.location.href = whatsappUrl;
+    }
     enquiryForm.reset();
     fieldMap.forEach(({ input, error }) => clearFieldError(input, error));
   });
