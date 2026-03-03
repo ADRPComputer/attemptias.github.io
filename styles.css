@@ -84,6 +84,28 @@ body {
   color: var(--violet);
 }
 
+.nav-links .nav-classplus-icon {
+  width: 34px;
+  height: 34px;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid #d9cdec;
+  border-radius: 8px;
+  color: #2e7d32;
+}
+
+.nav-links .nav-classplus-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.nav-links .nav-classplus-icon:hover {
+  color: var(--white);
+  background: #2e7d32;
+  border-color: #2e7d32;
+}
+
 .menu-toggle {
   display: none;
   border: 1px solid #dbd2eb;
@@ -236,6 +258,13 @@ h1 {
 
 .course-points li + li {
   margin-top: 0.35rem;
+}
+
+.classplus-actions {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
 }
 
 .team-role {
@@ -492,6 +521,15 @@ textarea:focus {
   transform: scale(0.9);
 }
 
+.site-footer a.telegram-link,
+.site-footer a.telegram-link:hover {
+  color: #2aabee;
+}
+
+.telegram-link svg {
+  transform: scale(0.92);
+}
+
 .contact-icon {
   color: #d5bbff;
   display: inline-grid;
@@ -605,6 +643,11 @@ textarea:focus {
 
   .nav-links.open {
     display: flex;
+  }
+
+  .nav-links .nav-classplus-icon {
+    width: 36px;
+    height: 36px;
   }
 
   .enquiry-form {
