@@ -116,6 +116,25 @@ if (enquiryForm && formStatus) {
     });
   });
 
+  const applyNowButtons = document.querySelectorAll(".apply-now-btn");
+  applyNowButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      if (!course) {
+        return;
+      }
+
+      const selectedCourse = button.getAttribute("data-course");
+      if (selectedCourse) {
+        course.value = selectedCourse;
+      }
+
+      const courseField = fieldMap.find(({ input }) => input && input.id === "course");
+      if (courseField) {
+        clearFieldError(courseField.input, courseField.error);
+      }
+    });
+  });
+
   enquiryForm.addEventListener("submit", (event) => {
     event.preventDefault();
 

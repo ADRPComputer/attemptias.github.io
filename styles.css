@@ -253,11 +253,50 @@ h1 {
 
 .course-points {
   margin: 0;
-  padding-left: 1.1rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.course-points li {
+  position: relative;
+  padding-left: 1.35rem;
+}
+
+.course-points li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #2a7c3a;
+  font-weight: 700;
 }
 
 .course-points li + li {
   margin-top: 0.35rem;
+}
+
+.course-meta {
+  margin-top: 0.75rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid #eadff6;
+}
+
+.course-meta p {
+  margin: 0.2rem 0;
+}
+
+.apply-now-btn {
+  margin-top: 0.8rem;
+}
+
+.course-price-current {
+  font-weight: 700;
+  color: #1f6f2d;
+}
+
+.course-price-old {
+  color: #6b6b6b;
+  margin-left: 0.35rem;
 }
 
 .classplus-actions {
