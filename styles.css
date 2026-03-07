@@ -251,6 +251,37 @@ h1 {
   color: var(--violet-dark);
 }
 
+.course-card-image-wrap {
+  position: relative;
+  margin: -1rem -1rem 0.85rem;
+  border-radius: 12px 12px 10px 10px;
+  overflow: hidden;
+  min-height: 150px;
+}
+
+.course-card-image {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+.course-card-image-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 17, 17, 0.08);
+}
+
+.integrated-course-card h3,
+.integrated-course-card .course-points,
+.integrated-course-card .course-meta,
+.integrated-course-card .apply-now-btn {
+  position: relative;
+  z-index: 1;
+}
+
 .course-points {
   margin: 0;
   padding-left: 0;
